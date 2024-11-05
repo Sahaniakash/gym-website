@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CAPTAIN'S<span>GYM</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plan.html">Plan</a> </li>
+                <li><a href="services.html">Services</a></li>
+               
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <main>
+            <p>Gym Location: 
+                <br>
+                Captains Gym <br>
+                Santacruz east <br>
+                mumbai, maharastra , 400055 <br>
+                <br><br>
+                Phone: <br>
+                8767455500
+                <br><br>
+                Email: <br>
+                contact@CaptianGymgmail.com
+            </p>  
+            <br><br><br>
+            <section id="contact-form">
+                <h2>Contact Us</h2>
+                <p>Please fill out the form below, and we’ll get back to you as soon as possible.</p>
+                
+                <form action="[your-server-endpoint]" method="POST">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                    <br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>       
+        </main>
+</body>
+</html>
+        

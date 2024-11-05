@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="plan.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CAPTAIN'S<span>GYM</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plan.html">Plan</a> </li>
+                <li><a href="services.html">Services</a></li>
+            
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <nav>
+        <p> <b> <u>Basic Membership:</u> </b>
+            <br>
+            Access: Gym floor access only, during standard hours.
+            Features: Access to cardio and strength equipment.
+            Cost: Monthly and annual pricing.
+            Benefits: Ideal for members who want to work out independently.
+            <br><br>
+            <u><b>Standard Membership:</b></u>
+<br>
+            Access: Includes gym floor and group fitness classes.
+            Features: Access to all workout equipment, and a range of fitness classes like yoga, spinning, and HIIT.
+            Cost: Monthly and annual pricing with discounts for yearly sign-ups.
+            Benefits: Great for those who want the flexibility of classes along with gym access.
+            <br><br>
+            <u><b>Premium Membership:</b></u>
+            <br>
+            Access: All Standard Membership features, plus personal training sessions, exclusive areas (like saunas or pools), or extended hours.
+            Features: Includes personal training consultations, nutrition guidance, and additional amenities.
+            Cost: Premium pricing with savings for long-term commitments.
+            Benefits: Designed for members seeking a full-service experience</p>
+        </nav>  
+        <br><br><br>
+        <div class="form-container">
+            <h2>Gym Membership Form</h2>
+            <form action="submit_form.php" method="POST">
+                <!-- Personal Information -->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+                  <br>   
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    <br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+    <br>
+                <!-- Membership Details -->
+                <label for="membership-type">Membership Type</label>
+                <select id="membership-type" name="membership_type" required>
+                    <option value="basic">Basic</option>
+                    <option value="premium">Standard</option>
+                    <option value="vip">Premium</option>
+                </select>
+    <br>
+                <label for="goals">Fitness Goals</label>
+                <textarea id="goals" name="goals" placeholder="Describe your fitness goals..." required></textarea>
+    <br>
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
